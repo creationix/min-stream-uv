@@ -1,8 +1,10 @@
+var Queue = require('fastqueue');
+
 // Wrap a readable uv_stream_t (like a tcp socket)
 // Returning a readable pull-stream function.
 module.exports = function (handle) {
-  var dataQueue = [];
-  var readQueue = [];
+  var dataQueue = new Queue();
+  var readQueue = new Queue();
   var paused = true;
   function check() {
     while (dataQueue.length && readQueue.length) {

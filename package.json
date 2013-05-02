@@ -1,0 +1,24 @@
+{
+  "name": "min-stream-uv",
+  "version": "0.0.0",
+  "description": "Min-Stream bindings for node's raw libuv bindings.",
+  "main": "tcp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/creationix/min-stream-uv.git"
+  },
+  "keywords": [
+    "min-stream",
+    "stream"
+  ],
+  "author": "Tim Caswell <tim@creationix.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "387606db37e3e6b9d6d5355f07e09ba55b04c775",
+  "dependencies": {
+    "fastqueue": "~0.1.0"
+  }
+}
